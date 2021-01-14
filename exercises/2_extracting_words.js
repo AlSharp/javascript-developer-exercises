@@ -21,7 +21,11 @@ Place your code that does all of this below this comment block, and
 before the next comment block.
 */
 // PLACE YOUR CODE BELOW
-
+wordList = words
+  .reduce((arr, word) =>
+    arr.concat(word.slice(1, 3))
+  , [])
+  .join(', ')
 // PLACE YOUR CODE ABOVE
 /*
 When run with "node 2_extracting_words.js" you should see the following on
